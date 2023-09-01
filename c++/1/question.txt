@@ -1,1 +1,22 @@
 Please Create App that accept id , name and age of Employee and print them (with oop)
+
+#include<iostream>                  
+using namespace std;
+class Employee {
+private:
+	string name;
+	int id;
+	int age;
+public:
+	Employee() {
+		cin >> name >> id >> age;
+	}
+	void print() {
+		cout << name << " " << id << " " << age;
+	}
+};
+
+int main() {
+	Employee ob;
+	ob.print();
+}
